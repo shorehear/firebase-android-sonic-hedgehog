@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MainFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.byankina.bibaboba.FirstFragment"
+        android:label="FirstFragment"
+        android:icon="@drawable/ic_sonic1" >
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.byankina.bibaboba.SecondFragment"
+        android:label="SecondFragment"
+        android:icon="@drawable/ic_sonic2"
+        />
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.byankina.bibaboba.LoginFragment"
+        android:label="LoginFragment"
+        android:icon="@drawable/ic_sonic2"
+        >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/RegisterFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_contentFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/RegisterFragment"
+        android:name="com.byankina.bibaboba.RegisterFragment"
+        android:label="RegisterFragment"
+        android:icon="@drawable/ic_sonic2"
+        >
+        <action
+            android:id="@+id/action_registerFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="com.byankina.bibaboba.MainFragment"
+        android:label="MainFragment"
+        android:icon="@drawable/ic_sonic2"
+        >
+        <action
+            android:id="@+id/action_MainFragment_to_RegisterFragment"
+            app:destination="@id/RegisterFragment" />
+        <action
+            android:id="@+id/action_MainFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_MainFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
+
+</navigation>

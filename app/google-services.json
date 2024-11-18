@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1040750676284",
+    "project_id": "bibaboba11-11",
+    "storage_bucket": "bibaboba11-11.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040750676284:android:90a78b1ff630e76f3b7639",
+        "android_client_info": {
+          "package_name": "com.byankina.bibaboba"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk1j2yIGVH59eQgcJS32QB9CunndDRe_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
