@@ -36,4 +36,7 @@
     <string name="price">Price</string>
     <string name="release_date">Release Date</string>
     <string name="game_name">Game Name</string>
+    <string name="logout">Logout</string>
+    <string name="remember_me">Remember me</string>
+    <string name="back_to_login">LOGIN BACK</string>
 </resources>

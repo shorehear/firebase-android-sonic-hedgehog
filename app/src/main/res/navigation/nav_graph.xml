@@ -19,7 +19,11 @@
         android:name="com.byankina.bibaboba.SecondFragment"
         android:label="SecondFragment"
         android:icon="@drawable/ic_sonic2"
-        />
+        >
+        <action
+            android:id="@+id/action_secondFragment_to_loginFragment"
+            app:destination="@id/LoginFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/LoginFragment"
@@ -44,6 +48,9 @@
         <action
             android:id="@+id/action_registerFragment_to_firstFragment"
             app:destination="@id/firstFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/LoginFragment" />
     </fragment>
 
     <fragment

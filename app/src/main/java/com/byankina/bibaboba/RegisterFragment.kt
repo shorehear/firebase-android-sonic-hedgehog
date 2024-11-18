@@ -22,6 +22,8 @@ class RegisterFragment : Fragment() {
     private lateinit var buttonByPhone: Button
     private lateinit var buttonByEmail: Button
     private lateinit var buttonRegister: Button
+    private lateinit var buttonLoginBack: Button
+
     private lateinit var navController: NavController
     private lateinit var firebaseAuth: FirebaseAuth
 
@@ -51,6 +53,7 @@ class RegisterFragment : Fragment() {
             buttonByPhone = findViewById(R.id.button_by_phone)
             buttonByEmail = findViewById(R.id.button_by_email)
             buttonRegister = findViewById(R.id.button_register)
+            buttonLoginBack = findViewById(R.id.button_exit)
         }
         navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment)
     }
@@ -59,6 +62,11 @@ class RegisterFragment : Fragment() {
         buttonByPhone.setOnClickListener { setPhoneMode() }
         buttonByEmail.setOnClickListener { setEmailMode() }
         buttonRegister.setOnClickListener { validateAndRegister() }
+        buttonLoginBack.setOnClickListener { navigateBackToLogin() }
+    }
+
+    private fun navigateBackToLogin() {
+        navController.navigate(R.id.action_registerFragment_to_loginFragment)
     }
 
     private fun setPhoneMode() {
